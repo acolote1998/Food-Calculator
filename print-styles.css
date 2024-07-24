@@ -1,0 +1,12 @@
+@media print {
+
+	.dontprint{
+		display: none;
+	}
+
+	section{
+		width: 80%;
+	}
+
+	
+}
