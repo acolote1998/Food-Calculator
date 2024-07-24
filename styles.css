@@ -1,0 +1,41 @@
+@font-face{
+	font-family: 'Libre Barcode 39';
+	src: url(LibreBarcode39-Regular.ttf);
+}
+
+.barcode{
+	font-family: 'Libre Barcode 39';
+	font-size: 40px;
+	text-align: center;
+	text-align: middle;
+}
+
+body{
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	font-size: 120%;
+	background-image: url('img/isagi.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section{
+	width: 40%;
+    border: 1px solid; black;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+hr{
+width: 40%;
+}
+
+input{
+	width: 60%;
+	text-align: center;
+}
+
