@@ -11,98 +11,44 @@
 <body>
       <main>
             <section id="calculation" class="dontprint">
-                <form>
-                      <div><br>
-                          <label for="foodname">Name:</label><br>
-                          <input type="text" id="foodname" name="foodname"><br><br>
+<form>
+  <div>
+    <label>Name:</label><br>
+    <input type="text" id="foodname"><br><br>
 
-                          <label for="barcode">Barcode:</label><br>
-                          <input type="text" id="barcode" name="barcode" placeholder=""><br><br>
+    <label>Barcode:</label><br>
+    <input type="text" id="barcode"><br><br>
+    <hr>
+  </div>
 
-                          <hr>
-                      </div>
-                      <div>
-                          <h3>Ingredient 1<br><input type="text"></h3>
-                          
-                          <label for="gramsi1">Grams of ingredient 1:</label><br>
-                          <input type="text" id="gramsi1" name="gramsi1" value="0"><br><br>
+  <div id="ingredients">
+    <!-- INGREDIENTE BASE -->
+    <div class="ingredient">
+      <h3>Ingredient 1<br><input type="text" class="iname"></h3>
 
-                          <label for="caloriesi1">Calories per 100g:</label><br>
-                          <input type="text" id="caloriesi1" name="caloriesi1" value="0"><br><br>
+      <label>Grams:</label><br>
+      <input type="number" class="grams" value="0"><br><br>
 
-                          <label for="carbsi1">Carbs per 100g:</label><br>
-                          <input type="text" id="carbsi1" name="carbsi1"value="0"><br><br>
+      <label>Calories per 100g:</label><br>
+      <input type="number" class="calories" value="0"><br><br>
 
-                          <label for="proteini1">Protein per 100g:</label><br>
-                          <input type="text" id="proteini1" name="proteini1"value="0"><br><br>
+      <label>Carbs per 100g:</label><br>
+      <input type="number" class="carbs" value="0"><br><br>
 
-                          <label for="fati1">Fat per 100g:</label><br>
-                          <input type="text" id="fati1" name="fati1"value="0"><br><br>
-        
-                          <hr>
-                      </div>
+      <label>Protein per 100g:</label><br>
+      <input type="number" class="protein" value="0"><br><br>
 
-                      <div>
-                          <h3>Ingredient 2<br><input type="text"></h3>
+      <label>Fat per 100g:</label><br>
+      <input type="number" class="fat" value="0"><br><br>
+      <hr>
+    </div>
+  </div>
 
-                          <label for="gramsi2">Grams of ingredient 2:</label><br>
-                          <input type="text" id="gramsi2" name="gramsi2"value="0"><br><br>
+  <button type="button" onclick="addIngredient()">+ Add Ingredient</button>
+  <br><br>
+  <button type="button" onclick="calculate()">Calculate</button>
+</form>
 
-                          <label for="caloriesi2">Calories per 100g:</label><br>
-                          <input type="text" id="caloriesi2" name="caloriesi2"value="0"><br><br>
-
-                          <label for="carbsi2">Carbs per 100g:</label><br>
-                          <input type="text" id="carbsi2" name="carbsi2"value="0"><br><br>
-
-                          <label for="proteini2">Protein per 100g:</label><br>
-                          <input type="text" id="proteini2" name="proteini2"value="0"><br><br>
-
-                          <label for="fati2">Fat per 100g:</label><br>
-                          <input type="text" id="fati2" name="fati2"value="0"><br><br>
-        
-                          <hr>
-                      </div>
-
-                      <div>
-                          <h3>Ingredient 3<br><input type="text"></h3>
-
-                          <label for="gramsi3">Grams of ingredient 3:</label><br>
-                          <input type="text" id="gramsi3" name="gramsi3"value="0"><br><br>
-
-                          <label for="caloriesi3">Calories per 100g:</label><br>
-                          <input type="text" id="caloriesi3" name="caloriesi3"value="0"><br><br>
-
-                          <label for="carbsi3">Carbs per 100g:</label><br>
-                          <input type="text" id="carbsi3" name="carbsi3"value="0"><br><br>
-
-                          <label for="proteini3">Protein per 100g:</label><br>
-                          <input type="text" id="proteini3" name="proteini3"value="0"><br><br>
-
-                          <label for="fati3">Fat per 100g:</label><br>
-                          <input type="text" id="fati3" name="fati3"value="0"><br><br>
-        
-                          <hr>
-                      </div>
-                      <div>
-                          <h3>Ingredient 4<br><input type="text"></h3>
-
-                          <label for="gramsi4">Grams of ingredient 4:</label><br>
-                          <input type="text" id="gramsi4" name="gramsi4"value="0"><br><br>
-
-                          <label for="caloriesi4">Calories per 100g:</label><br>
-                          <input type="text" id="caloriesi4" name="caloriesi4"value="0"><br><br>
-
-                          <label for="carbsi4">Carbs per 100g:</label><br>
-                          <input type="text" id="carbsi4" name="carbsi4"value="0"><br><br>
-
-                          <label for="proteini4">Protein per 100g:</label><br>
-                          <input type="text" id="proteini4" name="proteini4"value="0"><br><br>
-
-                          <label for="fati4">Fat per 100g:</label><br>
-                          <input type="text" id="fati4" name="fati4"value="0"><br><br><br>
-                      </div>
-                      <button type="button" onclick="calculate()">Calculate</button><br><br><br>
-                </form>
             </section>
             <br>
             <section id="result">
