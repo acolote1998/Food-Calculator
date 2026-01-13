@@ -17,15 +17,16 @@ function addIngredient() {
 
     <label>Calories per 100g:</label><br>
     <input type="number" class="calories" value="0"><br><br>
-
+    
+    <label>Fat per 100g:</label><br>
+    <input type="number" class="fat" value="0"><br><br>
+    
     <label>Carbs per 100g:</label><br>
     <input type="number" class="carbs" value="0"><br><br>
 
     <label>Protein per 100g:</label><br>
     <input type="number" class="protein" value="0"><br><br>
 
-    <label>Fat per 100g:</label><br>
-    <input type="number" class="fat" value="0"><br><br>
     <hr>
   `;
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,82 +9,84 @@
   <link rel="stylesheet" type="text/css" href="print-styles.css" media="print">
   <link rel="icon" href="recipes.ico" type="image/x-icon">
 </head>
+
 <body>
-      <main>
-            <section id="calculation" class="dontprint">
-<form>
-  <div>
-    <label>Name:</label><br>
-    <input type="text" id="foodname"><br><br>
+  <main>
+    <section id="calculation" class="dontprint">
+      <form>
+        <div>
+          <label>Name:</label><br>
+          <input type="text" id="foodname"><br><br>
 
-    <label>Barcode:</label><br>
-    <input type="text" id="barcode"><br><br>
-    <hr>
-  </div>
+          <label>Barcode:</label><br>
+          <input type="text" id="barcode"><br><br>
+          <hr>
+        </div>
 
-  <div id="ingredients">
-    <!-- INGREDIENTE BASE -->
-    <div class="ingredient">
-      <h3>Ingredient 1<br><input type="text" class="iname"></h3>
+        <div id="ingredients">
+          <!-- INGREDIENTE BASE -->
+          <div class="ingredient">
+            <h3>Ingredient 1<br><input type="text" class="iname"></h3>
 
-      <label>Grams:</label><br>
-      <input type="number" class="grams" value="0"><br><br>
+            <label>Grams:</label><br>
+            <input type="number" class="grams" value="0"><br><br>
 
-      <label>Calories per 100g:</label><br>
-      <input type="number" class="calories" value="0"><br><br>
+            <label>Calories per 100g:</label><br>
+            <input type="number" class="calories" value="0"><br><br>
 
-      <label>Fat per 100g:</label><br>
-      <input type="number" class="fat" value="0"><br><br>
+            <label>Fat per 100g:</label><br>
+            <input type="number" class="fat" value="0"><br><br>
 
-      <label>Carbs per 100g:</label><br>
-      <input type="number" class="carbs" value="0"><br><br>
+            <label>Carbs per 100g:</label><br>
+            <input type="number" class="carbs" value="0"><br><br>
 
-      <label>Protein per 100g:</label><br>
-      <input type="number" class="protein" value="0"><br><br>
+            <label>Protein per 100g:</label><br>
+            <input type="number" class="protein" value="0"><br><br>
 
-      <hr>
-    </div>
-  </div>
+            <hr>
+          </div>
+        </div>
 
-  <button type="button" onclick="addIngredient()">+ Add Ingredient</button>
-  <br><br>
-  <button type="button" onclick="calculate()">Calculate</button>
-</form>
+        <button type="button" onclick="addIngredient()">+ Add Ingredient</button>
+        <br><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
 
-            </section>
-            <br>
-            <section id="result">
-                <div><br>
-                  <label for="resultname">Name:</label><br>
-                  <input type="text" id="resultname" readonly><br><br>
+    </section>
+    <br>
+    <section id="result">
+      <div><br>
+        <label for="resultname">Name:</label><br>
+        <input type="text" id="resultname" readonly><br><br>
 
-                  <label for="resultbarcodename">Barcode Name:</label><br>
-                  <input type="text" id="resultbarcodename" readonly><br><br>
+        <label for="resultbarcodename">Barcode Name:</label><br>
+        <input type="text" id="resultbarcodename" readonly><br><br>
 
-                  <label for="resultbarcode">Barcode:</label><br>
-                  <input type="text" id="resultbarcode" readonly class="barcode"><br><br>
+        <label for="resultbarcode">Barcode:</label><br>
+        <input type="text" id="resultbarcode" readonly class="barcode"><br><br>
 
-                  <label for="portiongrams">Portion:</label><br>
-                  <input type="text" id="portiongrams" readonly><br><br>
+        <label for="portiongrams">Portion:</label><br>
+        <input type="text" id="portiongrams" readonly><br><br>
 
-                  <label for="resultcaloriesportion">Calories portion:</label><br>
-                  <input type="text" id="resultcaloriesportion" readonly><br><br>
+        <label for="resultcaloriesportion">Calories portion:</label><br>
+        <input type="text" id="resultcaloriesportion" readonly><br><br>
 
-                  <label for="resultcalories">Calories per 100g:</label><br>
-                  <input type="text" id="resultcalories" readonly><br><br>
+        <label for="resultcalories">Calories per 100g:</label><br>
+        <input type="text" id="resultcalories" readonly><br><br>
 
-                  <label for="resultfat">Fat per 100g:</label><br>
-                  <input type="text" id="resultfat" readonly><br><br>
+        <label for="resultfat">Fat per 100g:</label><br>
+        <input type="text" id="resultfat" readonly><br><br>
 
-                  <label for="resultcarbs">Carbs per 100g:</label><br>
-                  <input type="text" id="resultcarbs" readonly><br><br>
+        <label for="resultcarbs">Carbs per 100g:</label><br>
+        <input type="text" id="resultcarbs" readonly><br><br>
 
-                  <label for="resultprotein">Protein per 100g:</label><br>
-                  <input type="text" id="resultprotein" readonly><br><br>
+        <label for="resultprotein">Protein per 100g:</label><br>
+        <input type="text" id="resultprotein" readonly><br><br>
 
-                </div>
-            </section>
-      </main>
-    <script src="script.js"></script>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
